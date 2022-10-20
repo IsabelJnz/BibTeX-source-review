@@ -1,7 +1,7 @@
 # BibTeX-source-review
 
-##Introduction
+## Introduction
 
-##Description of the Rules
+## Description of the Rules
 
-##How to Guide
+## How to Guide
