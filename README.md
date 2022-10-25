@@ -80,7 +80,8 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
     
 <p>function for setting the rules:
 
-
+    <font color ="red"> Parts that can be change get a red information mark</font>
+    
     def get_date(sources):
         sources_final=[]
 
