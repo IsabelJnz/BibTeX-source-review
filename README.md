@@ -104,7 +104,7 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
             # add a condition that triggers a WARNING
             if sum > 5:
                 del sources_final[-1]
-                sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
+                sources_final.append(f'\n{tmp} |----> WARNING: Please add your warning text ---- \n')
             
     return sources_final
 </p>
