@@ -78,28 +78,28 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 <body>
 <p>#get warings for violating the rules
-def get_date(sources):
-  sources_final=[]
+    def get_date(sources):
+    sources_final=[]
 
-  for x in range(0,len(sources)-1):
-    tmp=sources[x]
+    for x in range(0,len(sources)-1):
+        tmp=sources[x]
 
-    strtmp="".join(tmp)
-    strtmp=strtmp.lower()
+        strtmp="".join(tmp)
+        strtmp=strtmp.lower()
 
-    y=strtmp.find('year')
-    
-    sources_final.append(tmp) 
+        y=strtmp.find('year')
+        
+        sources_final.append(tmp) 
 
-    if y!=-1:
-      sk1=strtmp.find('{', y)
-      sk2=strtmp.find('}', sk1)
-      sum=sk2-sk1
-      
-      if sum > 5:
-        del sources_final[-1]
-        sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
-      
-
-  return sources_final</p>
+        if y!=-1:
+        sk1=strtmp.find('{', y)
+        sk2=strtmp.find('}', sk1)
+        sum=sk2-sk1
+        
+        if sum > 5:
+            del sources_final[-1]
+            sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
+        
+    return sources_final
+  </p>
 </body>
