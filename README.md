@@ -4,6 +4,8 @@
 
 This repository contains a source checker for BibTex files in LaTeX. It is possible to check the sources of the any thesis for their correctness. Thereby it is possible to adapt or add style rules to enable an individual check. The current version complies with the current standards.
 
+<hr noshade color=#FF0000>
+
 ## Description of the Rules
 
 Those follwoing rules can be adapted to the styling rules of your thesis.
