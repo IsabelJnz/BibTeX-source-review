@@ -35,12 +35,14 @@ Start using the preprocessing file to check the sources types. You will receive 
 2. Please replace the 'path_source' with the location of your txt file:
 
 path_source='bibtex.txt'
+
 ...
 
 
 3. Please replace the 'path_final' with the location of your requested txt file:
 
-....
+...
+
 path_final='preCheck.txt'
 
 
@@ -52,12 +54,15 @@ Continue with the BibtexControl file and use the 'preCheck' file from the prepro
 1. Please replace the 'path_preCheck' with the location of your txt file:
 
 ...
+
 path_preCheck='preCheck.txt'
+
 ...
 
 2. Please replace the 'path_final' with the location of your requested txt file:
 
 ...
+
 path_updatedBibtex='updatedBibtex.txt'
 
 3. Take a look at the WARNING recommendations and adapt the txt file and delete the WARNING paragraph.
