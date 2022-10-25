@@ -77,8 +77,8 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 ### How to adapt an excisting or add a new rule for the BibtexControl program:
 
 <body>
-<p>#get warings for violating the rules
-    def get_date(sources):
+    
+<p>def get_date(sources):
     sources_final=[]
 
     for x in range(0,len(sources)-1):
@@ -100,6 +100,6 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
             del sources_final[-1]
             sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
         
-    return sources_final
-  </p>
+</p>return sources_final
+
 </body>
