@@ -112,11 +112,11 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
             # -1 means that no substring with the condition above was found
             # add specific substring condition to check the BibTeX items individually
             if y!=-1:
-            sk1=strtmp.find('{', y)
+            sk=strtmp.find('substring')
             
             
             # add a condition that triggers a WARNING
-            if sum > 5:
+            if sk==-1:
                 del sources_final[-1]
                 sources_final.append(f'\n{tmp} |----> WARNING: Please add your warning text ---- \n')
             
