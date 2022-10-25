@@ -10,6 +10,8 @@ This repository contains a source checker for BibTex files in LaTeX. It is possi
 
 Those follwoing rules can be adapted to the styling rules of your thesis.
 
+<hr noshade color=#FF0000>
+
 ### Style Rules
 
 - Checks if Bibtex format is correct and gives suggestions what it could be
@@ -27,6 +29,7 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 - WARNING: Remove URL
 - WARNING: Correct spelling of the edition
 
+<hr noshade color=#FF0000>
 
 ## How to Guide
 
@@ -50,7 +53,7 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 4. You receive another txt file ('preCheck'). Now you have the chance to adapte your sources. Therefore you can take a look at the WARNING recommendations. After adating the txt file please safe it.
 
-
+<hr noshade color=#FF0000>
 
 #### Continue with the BibtexControl file and use the 'preCheck' file from the preprocessing process
 
@@ -74,7 +77,7 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 <strong>FYI: For another BibTex check please remove the old WARNING for a better overview!</strong>
 
-
+<hr noshade color=#FF0000>
 
 ### How to adapt an excisting or add a new rule for the BibtexControl program:
 
@@ -111,3 +114,5 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
     return sources_final
 </p>
 </body>
+
+<hr noshade color=#FF0000>
