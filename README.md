@@ -78,7 +78,9 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 <body>
     
-<p>
+<p>function for setting the rules:
+
+
     def get_date(sources):
         sources_final=[]
 
