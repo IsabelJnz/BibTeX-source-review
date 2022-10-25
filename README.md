@@ -2,7 +2,12 @@
 
 ## Introduction
 
+This repository contains a source checker for BibTex files in LaTeX. It is possible to check the sources of the any thesis for their correctness. Thereby it is possible to adapt or add style rules to enable an individual check. The current version complies with the current standards.
+
 ## Description of the Rules
+
+Those follwoing rules can be adapted to the styling rules of your thesis.
+
 ### Style Rules
 
 - Checks if Bibtex format is correct and gives suggestions what it could be
@@ -22,3 +27,43 @@
 
 
 ## How to Guide
+
+1. Export the data of the bib file into a simple txt file.
+
+Start using the preprocessing file to check the sources types. You will receive type suggestions in case there are discrepancies in the characteristics of the BibTeX formats. 
+
+2. Please replace the 'path_source' with the location of your txt file:
+
+path_source='bibtex.txt'
+...
+
+
+3. Please replace the 'path_final' with the location of your requested txt file:
+
+....
+path_final='preCheck.txt'
+
+
+4. You receive another txt file ('preCheck'). Now you have the chance to adapte your sources. Therefore you can take a look at the WARNING recommendations. After adating the txt file please safe it.
+
+
+Continue with the BibtexControl file and use the 'preCheck' file from the preprocessing process
+
+1. Please replace the 'path_preCheck' with the location of your txt file:
+
+...
+path_preCheck='preCheck.txt'
+...
+
+2. Please replace the 'path_final' with the location of your requested txt file:
+
+...
+path_updatedBibtex='updatedBibtex.txt'
+
+3. Take a look at the WARNING recommendations and adapt the txt file and delete the WARNING paragraph.
+
+
+FYI: For another BibTex check please remove the old WARNING for a better overview!
+
+
+
