@@ -28,9 +28,9 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 ## How to Guide
 
-1. Export the data of the bib file into a simple txt file.
+#### Start using the preprocessing file to check the sources types. You will receive type suggestions in case there are discrepancies in the characteristics of the BibTeX formats.
 
-Start using the preprocessing file to check the sources types. You will receive type suggestions in case there are discrepancies in the characteristics of the BibTeX formats. 
+1. Export the data of the bib file into a simple txt file.
 
 2. Please replace the 'path_source' with the location of your txt file:
 
@@ -49,7 +49,8 @@ path_final='preCheck.txt'
 4. You receive another txt file ('preCheck'). Now you have the chance to adapte your sources. Therefore you can take a look at the WARNING recommendations. After adating the txt file please safe it.
 
 
-Continue with the BibtexControl file and use the 'preCheck' file from the preprocessing process
+
+#### Continue with the BibtexControl file and use the 'preCheck' file from the preprocessing process
 
 1. Please replace the 'path_preCheck' with the location of your txt file:
 
@@ -59,7 +60,7 @@ path_preCheck='preCheck.txt'
 
 ...
 
-2. Please replace the 'path_final' with the location of your requested txt file:
+2. Please replace the 'path_updatedBibtex' with the location of your requested txt file:
 
 ...
 
