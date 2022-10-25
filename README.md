@@ -80,8 +80,6 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
     
 <p>function for setting the rules:
 
-    <font color ="red"> Parts that can be change get a red information mark</font>
-    
     def get_date(sources):
         sources_final=[]
 
@@ -91,15 +89,19 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
             strtmp="".join(tmp)
             strtmp=strtmp.lower()
 
-            y=strtmp.find('year')
+            # with the function find() you can check every BibTeX item. You can search for a specific substring.
+            # for checking a specific BibTex format use '@' and the name of the format
+            y=strtmp.find('@...')
             
             sources_final.append(tmp) 
 
+            # -1 means that no substring with the condition above was found
+            # add specific substring condition to check the BibTeX items individually
             if y!=-1:
             sk1=strtmp.find('{', y)
-            sk2=strtmp.find('}', sk1)
-            sum=sk2-sk1
             
+            
+            # add a condition that triggers a WARNING
             if sum > 5:
                 del sources_final[-1]
                 sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
