@@ -34,16 +34,16 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 2. Please replace the 'path_source' with the location of your txt file:
 
-path_source='bibtex.txt'
+>path_source='bibtex.txt'
 
-...
+>...
 
 
 3. Please replace the 'path_final' with the location of your requested txt file:
 
-...
+>...
 
-path_final='preCheck.txt'
+>path_final='preCheck.txt'
 
 
 4. You receive another txt file ('preCheck'). Now you have the chance to adapte your sources. Therefore you can take a look at the WARNING recommendations. After adating the txt file please safe it.
@@ -54,22 +54,52 @@ path_final='preCheck.txt'
 
 1. Please replace the 'path_preCheck' with the location of your txt file:
 
-...
+>...
 
-path_preCheck='preCheck.txt'
+>path_preCheck='preCheck.txt'
 
-...
+>...
 
 2. Please replace the 'path_updatedBibtex' with the location of your requested txt file:
 
-...
+>...
 
-path_updatedBibtex='updatedBibtex.txt'
+>path_updatedBibtex='updatedBibtex.txt'
 
 3. Take a look at the WARNING recommendations and adapt the txt file and delete the WARNING paragraph.
 
 
-FYI: For another BibTex check please remove the old WARNING for a better overview!
+
+<strong>FYI: For another BibTex check please remove the old WARNING for a better overview!</strong>
 
 
 
+### How to adapt an excisting or add a new rule for the BibtexControl program:
+
+<body>
+<p>#get warings for violating the rules
+def get_date(sources):
+  sources_final=[]
+
+  for x in range(0,len(sources)-1):
+    tmp=sources[x]
+
+    strtmp="".join(tmp)
+    strtmp=strtmp.lower()
+
+    y=strtmp.find('year')
+    
+    sources_final.append(tmp) 
+
+    if y!=-1:
+      sk1=strtmp.find('{', y)
+      sk2=strtmp.find('}', sk1)
+      sum=sk2-sk1
+      
+      if sum > 5:
+        del sources_final[-1]
+        sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
+      
+
+  return sources_final</p>
+</body>
