@@ -1,9 +1,12 @@
 # BibTeX-source-review
 
 <a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#1-introduction"> 1. Introduction </a>
+
 <a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#2-description-of-the-rules"> 2. Description of the Rules </a>
-<a href="[https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#1-introduction](https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#3-usage-guide)"> 3. Usage Guide </a>
-<a href="[https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#1-introduction](https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#4-how-to-adapt-an-excisting-or-add-a-new-rule-for-the-bibtexcontrol-program)"> 4. How to adapt an excisting or add a new rule for the BibtexControl program </a>
+
+<a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#3-usage-guide"> 3. Usage Guide </a>
+
+<a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#4-how-to-adapt-an-excisting-or-add-a-new-rule-for-the-bibtexcontrol-program"> 4. How to adapt an excisting or add a new rule for the BibtexControl program </a>
 
 
 ## 1. Introduction
