@@ -1,12 +1,25 @@
 # BibTeX-source-review
 
-## Introduction
+<a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#1-introduction"> 1. Introduction </a>
+
+<a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#2-description-of-the-rules"> 2. Description of the Rules </a>
+
+<a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#3-usage-guide"> 3. Usage Guide </a>
+
+<a href="https://github.com/IsabelJnz/BibTeX-source-review/blob/main/README.md#4-how-to-adapt-an-excisting-or-add-a-new-rule-for-the-bibtexcontrol-program"> 4. How to adapt an excisting or add a new rule for the BibtexControl program </a>
+
+
+## 1. Introduction
 
 This repository contains a source checker for BibTex files in LaTeX. It is possible to check the sources of the any thesis for their correctness. Thereby it is possible to adapt or add style rules to enable an individual check. The current version complies with the current standards.
 
-## Description of the Rules
+<hr noshade color=#FF0000>
+
+## 2. Description of the Rules
 
 Those follwoing rules can be adapted to the styling rules of your thesis.
+
+<hr noshade color=#FF0000>
 
 ### Style Rules
 
@@ -25,8 +38,9 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 - WARNING: Remove URL
 - WARNING: Correct spelling of the edition
 
+<hr noshade color=#FF0000>
 
-## How to Guide
+## 3. Usage Guide
 
 #### Start using the preprocessing file to check the sources types. You will receive type suggestions in case there are discrepancies in the characteristics of the BibTeX formats.
 
@@ -48,7 +62,7 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 4. You receive another txt file ('preCheck'). Now you have the chance to adapte your sources. Therefore you can take a look at the WARNING recommendations. After adating the txt file please safe it.
 
-
+<hr noshade color=#FF0000>
 
 #### Continue with the BibtexControl file and use the 'preCheck' file from the preprocessing process
 
@@ -72,14 +86,13 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
 
 <strong>FYI: For another BibTex check please remove the old WARNING for a better overview!</strong>
 
+<hr noshade color=#FF0000>
 
-
-### How to adapt an excisting or add a new rule for the BibtexControl program:
+## 4. How to adapt an excisting or add a new rule for the BibtexControl program
 
 <body>
     
 <p>function for setting the rules:
-
 
     def get_date(sources):
         sources_final=[]
@@ -90,19 +103,25 @@ Those follwoing rules can be adapted to the styling rules of your thesis.
             strtmp="".join(tmp)
             strtmp=strtmp.lower()
 
-            y=strtmp.find('year')
+            # with the function find() you can check every BibTeX item. You can search for a specific substring.
+            # for checking a specific BibTex format use '@' and the name of the format
+            y=strtmp.find('@...')
             
             sources_final.append(tmp) 
 
+            # -1 means that no substring with the condition above was found
+            # add specific substring condition to check the BibTeX items individually
             if y!=-1:
-            sk1=strtmp.find('{', y)
-            sk2=strtmp.find('}', sk1)
-            sum=sk2-sk1
+            sk=strtmp.find('substring')
             
-            if sum > 5:
+            
+            # add a condition that triggers a WARNING
+            if sk==-1:
                 del sources_final[-1]
-                sources_final.append(f'\n{tmp} |----> WARNING: Please adapt datestamp above -> (year only)! ---- \n')
+                sources_final.append(f'\n{tmp} |----> WARNING: Please add your warning text ---- \n')
             
     return sources_final
 </p>
 </body>
+
+<hr noshade color=#FF0000>
