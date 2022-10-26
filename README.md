@@ -17,7 +17,7 @@ This repository contains a source checker for BibTex files in LaTeX. It is possi
 
 ## 2. Description of the Rules
 
-Those follwoing rules can be adapted to the styling rules of your thesis.
+Those following rules can be adapted to the styling rules of your thesis.
 
 <hr noshade color=#FF0000>
 
