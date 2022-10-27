@@ -32,7 +32,7 @@ Those following rules can be adapted to the styling rules of your thesis.
 - WARNING: Corr and Arxiv must be removed
 - WARNING: Page numbers must be present everywhere
 - WARNING: No more than three authors may be given, abbreviate with 'and others' afterwards
-- WARNING: language recognition → German or English source???
+- WARNING: language recognition → German or English source?
 - WARNING: Adjust edition spelling
 - WARNING: Correct formulas
 - WARNING: Remove URL
